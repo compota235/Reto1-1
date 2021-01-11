@@ -1,0 +1,56 @@
+#1,Elimina el último y añadelo al principio
+
+lista =[12 ,23 , 55 , 29 , 92, 64]
+ 
+
+lista.pop()
+print("Eliminamos el ultimo numero :" , lista)
+lista.insert(0 , 64)
+print(" lista con el 64 de primero : "  , lista )
+
+#segudo punto 2, mueve el segundo elemento a la última posición
+
+lista.insert(5 , lista.pop(1))
+print("respuesta del 2  :", lista)
+
+##3, añade el número 14 al comienzo de la lista
+
+lista.insert(0 , 14)
+print("respues de la pregunta 3" ,  lista)
+
+#4, suma todos los números de la lista y añade el resultado al final de la lista
+
+lista.append(sum(lista))
+print("respuesta de la 4  : " ,lista)
+
+
+#5, combina la lista actual con la siguiente: [4,11,32]
+
+
+lista2 = [4 , 11 , 32]
+
+resultado = lista + lista2
+print("respuesta del punto 5 " , resultado)
+
+#6, elimina todos los números impares de la lista
+
+for numero in resultado[:]:
+    if numero % 2 != 0:
+        resultado.remove(numero)
+print("respuesta de la 6 " ,resultado)
+
+#7, ordena los números de la lista de forma ascendente
+
+resultado.sort()
+print("respuesta de la 7 " , resultado)
+
+##8, vacía la lista
+
+for numero in resultado[:]:
+    resultado.remove(numero)
+print("respuesta de la 8 " , resultado)
+
+
+
+
+
